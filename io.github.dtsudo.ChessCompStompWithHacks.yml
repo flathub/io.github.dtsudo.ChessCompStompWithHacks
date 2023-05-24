@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/dtsudo/Chess-Comp-Stomp-with-Hacks-Electron-Version.git
-        tag: v1.01
-        commit: de7b2b3f98ef65367b804e612610859dc76eb2aa
+        tag: v1.02
+        commit: 11c55419ad069951235d1fcded6eed83eb56689c
         dest: main
       - generated-sources.json
       - type: script

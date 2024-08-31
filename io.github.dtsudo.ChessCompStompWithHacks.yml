@@ -45,4 +45,4 @@ modules:
       - type: script
         dest-filename: run.sh
         commands:
-          - zypak-wrapper.sh /app/main/chess-comp-stomp-with-hacks "$@"
+          - zypak-wrapper.sh /app/main/chess-comp-stomp-with-hacks --ozone-platform-hint=auto "$@"

@@ -42,7 +42,5 @@ modules:
         commit: bf4d7b23dff46367c2162109abffa1f2c0b130be
         dest: main
       - generated-sources.json
-      - type: script
-        dest-filename: run.sh
-        commands:
-          - zypak-wrapper.sh /app/main/chess-comp-stomp-with-hacks --ozone-platform-hint=auto "$@"
+      - type: file
+        path: run.sh

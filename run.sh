@@ -1,12 +1,9 @@
 #!/bin/sh
 
-echo "hello world"
-if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-    echo "is wayland"
+WAYLAND_SOCKET = ${WAYLAND_DISPLAY:-"wayland-0"}
+
+if [[ -e "$XDG_RUNTIME_DIR/${WAYLAND_SOCKET}" ]]; then
     exec zypak-wrapper.sh /app/main/chess-comp-stomp-with-hacks --ozone-platform-hint=auto "$@"  
 else
-    echo "is not wayland"
     exec zypak-wrapper.sh /app/main/chess-comp-stomp-with-hacks "$@"  
 fi
-
-echo "xdgsessiontype is $XDG_SESSION_TYPE hmmmmm"

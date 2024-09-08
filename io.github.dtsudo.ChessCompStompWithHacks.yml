@@ -39,7 +39,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/dtsudo/Hello-World.git
-        commit: cfe749b4e1d26bf730379ce3c00e885b9f9fdef5
+        commit: 8736b05e126acb8dd7070c63acdba3018f3e8e4f
         dest: main
       - generated-sources.json
       - type: file

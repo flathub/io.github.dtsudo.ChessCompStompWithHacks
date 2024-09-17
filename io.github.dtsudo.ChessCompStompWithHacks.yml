@@ -1,9 +1,9 @@
 app-id: io.github.dtsudo.ChessCompStompWithHacks
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '24.08'
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node18
 command: run.sh
@@ -31,7 +31,7 @@ modules:
         npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS  --linux --dir
       - cp -a dist/linux*unpacked /app/main
       - install -Dm755 -t /app/bin/ ../run.sh
-      - install -Dm644 icon.svg /app/share/icons/hicolor/scalable/apps/io.github.dtsudo.ChessCompStompWithHacks.svg
+      - install -Dm644 icon256x256.png /app/share/icons/hicolor/256x256/apps/io.github.dtsudo.ChessCompStompWithHacks.png
       - install -Dm644 icon512x512.png /app/share/icons/hicolor/512x512/apps/io.github.dtsudo.ChessCompStompWithHacks.png
       - install -Dm644 ChessCompStompWithHacks.desktop /app/share/applications/io.github.dtsudo.ChessCompStompWithHacks.desktop
       - install -Dm644 ChessCompStompWithHacks.metainfo.xml /app/share/metainfo/io.github.dtsudo.ChessCompStompWithHacks.metainfo.xml
@@ -39,7 +39,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/dtsudo/Hello-World.git
-        commit: 8736b05e126acb8dd7070c63acdba3018f3e8e4f
+        commit: 2857173c2faa6df5a46858fa97bb5c9fb786799b
         dest: main
       - generated-sources.json
       - type: file

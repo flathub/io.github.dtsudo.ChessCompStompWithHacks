@@ -1,10 +1,10 @@
-The contents of this repository (i.e. the Flatpak manifest file and generated-sources.json) are licensed under the MIT license.
+The contents of this repository (i.e. the Flatpak manifest file, run.sh, and generated-sources.json) are licensed under the MIT license.
 
-(See https://github.com/dtsudo/Chess-Comp-Stomp-with-Hacks-Electron-Version/blob/v1.02/README.md for the licensing of the game itself.)
+(See https://github.com/dtsudo/Chess-Comp-Stomp-with-Hacks-Electron-Version/blob/v1.03/README.md for the licensing of the game itself.)
 
 MIT License
 
-Copyright (c) 2023 dtsudo
+Copyright (c) 2024 dtsudo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

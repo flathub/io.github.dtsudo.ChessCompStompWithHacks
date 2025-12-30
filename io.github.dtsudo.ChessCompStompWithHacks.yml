@@ -40,8 +40,8 @@ modules:
     subdir: main
     sources:
       - type: git
-        url: https://github.com/dtsudo/Chess-Comp-Stomp-with-Hacks-Electron-Version.git
-        commit: e29740a003bfd816ca61e6144da200a426ddcef9
+        url: https://github.com/dtsudo/Hello-World.git
+        commit: 6a031cbc467b70ea29803b64a8549b5961611fa9
         dest: main
       - generated-sources.json
       - type: file

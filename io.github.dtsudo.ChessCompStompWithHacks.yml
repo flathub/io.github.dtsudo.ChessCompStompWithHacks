@@ -30,7 +30,7 @@ modules:
       - npm install --offline
       - |
         . ../flatpak-node/electron-builder-arch-args.sh
-        npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS  --linux --dir
+        npm run dist -- $ELECTRON_BUILDER_ARCH_ARGS  --linux  --dir
       - cp -a dist/linux*unpacked /app/main
       - install -Dm755 -t /app/bin/ ../run.sh
       - install -Dm644 icon256x256.png /app/share/icons/hicolor/256x256/apps/io.github.dtsudo.ChessCompStompWithHacks.png
